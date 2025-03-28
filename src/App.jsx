@@ -1,11 +1,12 @@
 import Navbar from './Components/Navbar'
 import MovieCard from './Components/MovieCard'
+import Homepage from './pages/Homepage'
 function App() {
 
   return (
     <>
   <Navbar/>
-  <MovieCard movie={{title: "xdfghj", release_date:"123"}}/>
+  <Homepage/>
     </>
   )
 }
