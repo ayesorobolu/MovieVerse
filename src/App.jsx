@@ -3,6 +3,7 @@ import Favorites from './pages/Favorites'
 import Homepage from './pages/Homepage'
 import { Routes, Route } from 'react-router-dom'
 import { MovieProvider } from './contexts/MovieContext'
+import "./css/App.css";
 function App() {
 
   return (

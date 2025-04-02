@@ -1,4 +1,4 @@
-:root {
+/* :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -158,7 +158,7 @@ button:focus-visible {
 }
 
 
-/* Animation for new favorites being added */
+
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -379,4 +379,4 @@ button:focus-visible {
   .nav-link {
     padding: 0.5rem;
   }
-}
+} */

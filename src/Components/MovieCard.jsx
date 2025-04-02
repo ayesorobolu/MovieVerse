@@ -1,6 +1,6 @@
 import React from 'react'
 import { useMovieContext } from '../contexts/MovieContext'
-
+import "../css/MovieCard.css"
 const MovieCard = ({movie}) => {
     const {isFavorite, addToFavorites, removeFavorites} = useMovieContext()
     const favorite = isFavorite (movie.id)

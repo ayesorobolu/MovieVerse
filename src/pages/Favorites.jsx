@@ -1,7 +1,7 @@
 import React from 'react'
 import { useMovieContext } from '../contexts/MovieContext'
 import MovieCard from '../Components/MovieCard'
-
+import "../css/Favorites.css";
 const Favorites = () => {
   const {favorites} = useMovieContext();
 
