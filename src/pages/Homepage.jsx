@@ -1,6 +1,7 @@
 import React from 'react'
 import MovieCard from '../Components/MovieCard'
 import { useState, useEffect } from 'react'
+import { FaSearch} from "react-icons/fa";
 import { searchMovies, getPopularMovies } from '../services/api'
 import "../css/Home.css";
 
@@ -45,7 +46,12 @@ setError("Failed to search movies...")
   return (
 
     <div className='home'>
-    <form onSubmit={handleSearch} className='search-form'>
+    <header className='header'>
+        <div className="header-content">
+          <h2>Discover Your Favorite Movies</h2>
+          <p>Explore trending movies and more.</p>
+          <br />
+          <form onSubmit={handleSearch} className='search-form'>
     <input 
     type="text" 
     placeholder='Search for movies' 
@@ -54,8 +60,16 @@ setError("Failed to search movies...")
     onChange={(e) => setsearchQuery(e.target.value)} 
     />  
 
-    <button type='submit' className='search-button'>Search</button>  
+    <button type='submit' className='search-button'> <FaSearch /></button>  
     </form> 
+        </div>
+      </header>
+
+      <br />
+
+     <div className='movie-display'>
+     <div> <h1>TRENDING MOVIES</h1> </div>
+  <br />
     
      {error && <div className='error-message'>{error}</div>}
 
@@ -71,6 +85,32 @@ setError("Failed to search movies...")
           )}
         </div>
       )}
+
+      </div> 
+
+      <br />
+      <br />
+
+<footer className="footer">
+  <div className="footer-header">
+    <h4>Connect with Us</h4>
+  </div>
+
+  <div className="social-links">
+    <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
+    <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+    <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Instagram</a>
+  </div>
+
+  <div className="footer-text">
+    <p>Explore the world of movies and enjoy endless entertainment.</p>
+  </div>
+
+  <div className="copyright">
+    <p>© 2025 MovieVerse. All Rights Reserved.</p>
+  </div>
+</footer>
+
     </div>
   );
 };
