@@ -15,12 +15,11 @@
 
 .header{
 background: url("https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bW92aWUlMjBjb2xsYWdlfGVufDB8fDB8fHww") ;
-height: 90vh;
+height: 85vh;
 display: flex;
 justify-content: center;
 align-items: center;
 text-align: center;
-/* width: 100vw; */
 }
 
 

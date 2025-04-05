@@ -65,11 +65,9 @@ setError("Failed to search movies...")
         </div>
       </header>
 
-      <br />
-
      <div className='movie-display'>
      <div> <h1>TRENDING MOVIES</h1> </div>
-  <br />
+     <br />
     
      {error && <div className='error-message'>{error}</div>}
 
